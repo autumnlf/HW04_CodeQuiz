@@ -251,7 +251,7 @@ function HSadd() {
     window.localStorage.setItem("HSlist", JSON.stringify(highscores));
     console.log(HSentryel);
     // redirect to next page
-    window.location.href = "./highscores.html";
+    window.location.href = "highscores.html";
     
     HSlistel.appendChild(HSentryel);
 }
