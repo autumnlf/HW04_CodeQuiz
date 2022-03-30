@@ -11,12 +11,12 @@ For my quiz I give the user 2 minutes to answer 5 questions. However if you answ
 
 ## Screenshots:
 
-![Capture of deployed application](./assets/images/cap1.png)
+![Capture of deployed application](./assets/cap1.png)
 
-![Capture of deployed application](./assets/images/cap2.png)
+![Capture of deployed application](./assets/cap2.png)
 
-![Capture of deployed application](./assets/images/cap3.png)
+![Capture of deployed application](./assets/cap3.png)
 
-![Capture of deployed application](./assets/images/cap4.png)
+![Capture of deployed application](./assets/cap4.png)
 
-![Capture of deployed application](./assets/images/cap5.png)
+![Capture of deployed application](./assets/cap5.png)
