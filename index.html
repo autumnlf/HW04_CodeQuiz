@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- woah, bro. get ready for this wicked html :) -->
+<!-- Woah, bro. get ready for this wicked html :) -->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Quiz | Take Quiz</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Imprima">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Da">
 </head>
 
 <body>
     <header>
-        <p class="headertext">
+        <p class="headertext" id="header">
             This quiz is timed and wrong answers will deduct 10 seconds and your score. You have 120 seconds on the clock, good luck!
         </p>
+        <p class="hidden" id="timer"> 120 </p>
     </header>
 
     
     <!-- class to show: homepage -->
-    <section class="homepage">
+    <section class="homepage" id="homepage">
     
         <h1>Coding Quiz</h1>  
 
-        <button class="startbutton" type="button">Start!</button>
+        <button class="startbutton" id="start" type="button">Start!</button>
 
-        <button class="scorebutton" type="button">Highscores</button>
-
+        <a href="./assets/highscores.html"><button class="scorebutton" id="HSpage" type="button" >Highscores</button></a>
     </section>
     
     <!-- class to show: questionbox -->
-    <section>
-        <section class="hidden">
-            <h1>Q1</h1>
-            <p class="question">Which function would you use to turn an array into a string?</p>
-            <button class="answerchoice" type="button">blah blah</button>
-            <button class="answerchoice" type="button">blah blah</button>
-            <button class="answerchoice" type="button">blah blah</button>
-            <button class="answerchoice" type="button">blah blah</button>
-        </section>
-
+    <section class="hidden" id="quiz"> 
+       
+        <h1 id="Qnumber">Q1</h1>
+        <p class="question" id="question"> Which is the correct way to change an element's class?</p>
+        <button class="answerchoice" id="choice1" type="button">setAttribute( Element, "new class")</button>
+        <button class="answerchoice" id="choice2" type="button">Element.setAttribute("class", "new class")</button>
+        <button class="answerchoice" id="choice3" type="button">Element.setAttribute("new class")</button>
+        <button class="answerchoice" id="choice4" type="button">Element.setAtribute.class("new class")</button>
+        
     </section>
 
     <!-- class to show: done -->
-    <section>
-        <section class="hidden">
-            <h1>Done!</h1>
+    <section class="hidden" id="donepage">
+        <h1 id="doneTitle">Done!</h1>
+        <p id="scoretext"> You scored: </p>
+        <div class="initialbox">
 
-            <div class="initialbox">
-
-                <a>Enter Initials:</a>
-                <input type="text" name="Initials" value="" maxlength="3" />   
-
-            </div>
-            
-            <button class="startbutton" type="button">Submit</button>
-            
-        </section>
-
+            <a>Enter Initials:</a>
+            <input id="initialform" type="text" name="Initials" value="" maxlength="3" />
+            <button type="button" onclick="HSadd()">Submit</button>
+        </div>
+        
+        
+        
     </section>
+
+    
    
     <footer>
-        <p class="footertext">
+        <p class="footertext" id="footer">
             You've got this!
         </p>
     </footer>
 
+
+    <script src="./js.js"></script>
 </body>
 </html>
